@@ -1,0 +1,66 @@
+v=0
+o=- 3996730354 3996730354 IN IP4 0.0.0.0
+s=-
+t=0 0
+a=group:BUNDLE 0 1
+a=msid-semantic:WMS *
+m=video 63560 UDP/TLS/RTP/SAVPF 96 97 102 103 108 109
+c=IN IP4 10.2.0.2
+a=inactive
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid
+a=mid:0
+a=msid:44bca31d-dafc-4372-9ad9-d79c0a1bbbdb 8ab6dec4-64f9-4902-8220-b813e9ff2367
+a=rtcp:9 IN IP4 0.0.0.0
+a=rtcp-mux
+a=ssrc-group:FID 1711505470 3364477693
+a=ssrc:1711505470 cname:0bcdbc92-7270-41b6-a856-2182013fdf2c
+a=ssrc:3364477693 cname:0bcdbc92-7270-41b6-a856-2182013fdf2c
+a=rtpmap:96 VP8/90000
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtcp-fb:96 goog-remb
+a=rtpmap:97 rtx/90000
+a=rtcp-fb:97 rrtr
+a=fmtp:97 apt=96
+a=rtpmap:102 H264/90000
+a=rtcp-fb:102 nack
+a=rtcp-fb:102 nack pli
+a=rtcp-fb:102 goog-remb
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f
+a=rtpmap:103 rtx/90000
+a=rtcp-fb:103 rrtr
+a=fmtp:103 apt=102
+a=rtpmap:108 H264/90000
+a=rtcp-fb:108 nack
+a=rtcp-fb:108 nack pli
+a=rtcp-fb:108 goog-remb
+a=fmtp:108 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f
+a=rtpmap:109 rtx/90000
+a=rtcp-fb:109 rrtr
+a=fmtp:109 apt=108
+a=candidate:d6ee6c8481721c8f410c5e2bcc4334f8 1 udp 2130706431 10.2.0.2 63560 typ host
+a=candidate:742c6769e9365008b06deb952dad31ce 1 udp 2130706431 192.168.0.125 63561 typ host
+a=candidate:36780b3c8d48149a320c24d2c2fb881c 1 udp 1694498815 195.242.214.117 14303 typ srflx raddr 10.2.0.2 rport 63560
+a=end-of-candidates
+a=ice-ufrag:rEUj
+a=ice-pwd:92bG1KmHwBwvLTHzOibFGY
+a=fingerprint:sha-256 AA:EC:A2:94:ED:18:8F:48:50:33:8C:7D:5C:E1:39:B1:9F:24:E9:2A:58:08:6E:32:01:A7:B6:1C:45:78:59:DE
+a=fingerprint:sha-384 D5:13:95:9E:2D:6D:DA:D6:B0:3A:4E:94:C6:EE:2F:77:16:6B:6F:30:3B:32:9C:4B:1A:16:C0:49:22:CB:2B:F7:3F:93:18:1F:AB:23:D7:D2:4F:4B:1F:83:C6:38:8D:D2
+a=fingerprint:sha-512 C9:F9:41:1D:B3:09:68:60:85:B8:4A:72:CE:71:4F:AD:1A:07:88:BE:66:29:63:CC:CF:11:F4:92:18:89:A1:4A:DE:A0:7A:7D:9D:B5:69:D7:06:E6:9E:2B:2E:61:EE:F7:AD:02:E4:5F:E6:32:F7:13:DD:1B:4B:0A:05:38:03:2B
+a=setup:active
+m=application 63560 UDP/DTLS/SCTP webrtc-datachannel
+c=IN IP4 10.2.0.2
+a=mid:1
+a=sctp-port:5000
+a=max-message-size:65536
+a=candidate:d6ee6c8481721c8f410c5e2bcc4334f8 1 udp 2130706431 10.2.0.2 63560 typ host
+a=candidate:742c6769e9365008b06deb952dad31ce 1 udp 2130706431 192.168.0.125 63561 typ host
+a=candidate:36780b3c8d48149a320c24d2c2fb881c 1 udp 1694498815 195.242.214.117 14303 typ srflx raddr 10.2.0.2 rport 63560
+a=end-of-candidates
+a=ice-ufrag:rEUj
+a=ice-pwd:92bG1KmHwBwvLTHzOibFGY
+a=fingerprint:sha-256 AA:EC:A2:94:ED:18:8F:48:50:33:8C:7D:5C:E1:39:B1:9F:24:E9:2A:58:08:6E:32:01:A7:B6:1C:45:78:59:DE
+a=fingerprint:sha-384 D5:13:95:9E:2D:6D:DA:D6:B0:3A:4E:94:C6:EE:2F:77:16:6B:6F:30:3B:32:9C:4B:1A:16:C0:49:22:CB:2B:F7:3F:93:18:1F:AB:23:D7:D2:4F:4B:1F:83:C6:38:8D:D2
+a=fingerprint:sha-512 C9:F9:41:1D:B3:09:68:60:85:B8:4A:72:CE:71:4F:AD:1A:07:88:BE:66:29:63:CC:CF:11:F4:92:18:89:A1:4A:DE:A0:7A:7D:9D:B5:69:D7:06:E6:9E:2B:2E:61:EE:F7:AD:02:E4:5F:E6:32:F7:13:DD:1B:4B:0A:05:38:03:2B
+a=setup:active
