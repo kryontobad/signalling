@@ -1,0 +1,61 @@
+v=0
+o=- 3996933295 3996933295 IN IP4 0.0.0.0
+s=-
+t=0 0
+a=group:BUNDLE 0 1
+a=msid-semantic:WMS *
+m=video 56002 UDP/TLS/RTP/SAVPF 97 98 99 100 101 102
+c=IN IP4 192.168.1.253
+a=sendrecv
+a=extmap:1 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:3 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=mid:0
+a=msid:2604c6a1-8cbd-4295-a8f4-a342eb0faf2a 06678d07-3f4f-42b2-9ebd-c6dfc42c9226
+a=rtcp:9 IN IP4 0.0.0.0
+a=rtcp-mux
+a=ssrc-group:FID 1943079994 1494955121
+a=ssrc:1943079994 cname:ccf2543d-d6f4-44f2-b4b6-1549eae35c19
+a=ssrc:1494955121 cname:ccf2543d-d6f4-44f2-b4b6-1549eae35c19
+a=rtpmap:97 VP8/90000
+a=rtcp-fb:97 nack
+a=rtcp-fb:97 nack pli
+a=rtcp-fb:97 goog-remb
+a=rtpmap:98 rtx/90000
+a=fmtp:98 apt=97
+a=rtpmap:99 H264/90000
+a=rtcp-fb:99 nack
+a=rtcp-fb:99 nack pli
+a=rtcp-fb:99 goog-remb
+a=fmtp:99 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f
+a=rtpmap:100 rtx/90000
+a=fmtp:100 apt=99
+a=rtpmap:101 H264/90000
+a=rtcp-fb:101 nack
+a=rtcp-fb:101 nack pli
+a=rtcp-fb:101 goog-remb
+a=fmtp:101 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f
+a=rtpmap:102 rtx/90000
+a=fmtp:102 apt=101
+a=candidate:7c1e0cfeef148fd206bb0e6c30862958 1 udp 2130706431 192.168.1.253 56002 typ host
+a=candidate:b4db5477346f5fe7836cf19a6dd7fbfe 1 udp 1694498815 72.136.112.225 10261 typ srflx raddr 192.168.1.253 rport 56002
+a=end-of-candidates
+a=ice-ufrag:oGNN
+a=ice-pwd:BDp1lVsBB6Qco055D71BIU
+a=fingerprint:sha-256 94:55:E4:FC:39:8B:55:3C:52:71:AC:0A:FB:AE:7B:18:25:55:A2:D0:FD:65:2C:57:FD:A7:63:15:E7:DB:E0:73
+a=fingerprint:sha-384 FE:36:22:A3:92:B5:68:1B:74:D1:82:CF:01:9A:42:87:08:83:8E:06:53:1A:AF:D8:6C:1E:E2:D2:F1:1A:51:F9:1F:70:D5:E2:B7:02:A0:51:E6:B1:AF:E3:B4:FF:EF:13
+a=fingerprint:sha-512 BC:7D:E6:9F:B3:12:5D:D6:42:5C:56:B3:28:44:2A:83:E3:77:CF:62:00:62:57:BE:8E:8A:DC:90:89:5D:EA:64:15:77:2C:F1:0D:10:C2:5C:CD:3D:FE:9B:76:CD:60:DD:9D:58:E6:43:34:73:9B:77:53:EA:05:7D:E5:58:9A:BB
+a=setup:actpass
+m=application 56001 UDP/DTLS/SCTP webrtc-datachannel
+c=IN IP4 192.168.1.253
+a=mid:1
+a=sctp-port:5000
+a=max-message-size:65536
+a=candidate:7c1e0cfeef148fd206bb0e6c30862958 1 udp 2130706431 192.168.1.253 56001 typ host
+a=candidate:b4db5477346f5fe7836cf19a6dd7fbfe 1 udp 1694498815 72.136.112.225 10293 typ srflx raddr 192.168.1.253 rport 56001
+a=end-of-candidates
+a=ice-ufrag:oGNN
+a=ice-pwd:BDp1lVsBB6Qco055D71BIU
+a=fingerprint:sha-256 94:55:E4:FC:39:8B:55:3C:52:71:AC:0A:FB:AE:7B:18:25:55:A2:D0:FD:65:2C:57:FD:A7:63:15:E7:DB:E0:73
+a=fingerprint:sha-384 FE:36:22:A3:92:B5:68:1B:74:D1:82:CF:01:9A:42:87:08:83:8E:06:53:1A:AF:D8:6C:1E:E2:D2:F1:1A:51:F9:1F:70:D5:E2:B7:02:A0:51:E6:B1:AF:E3:B4:FF:EF:13
+a=fingerprint:sha-512 BC:7D:E6:9F:B3:12:5D:D6:42:5C:56:B3:28:44:2A:83:E3:77:CF:62:00:62:57:BE:8E:8A:DC:90:89:5D:EA:64:15:77:2C:F1:0D:10:C2:5C:CD:3D:FE:9B:76:CD:60:DD:9D:58:E6:43:34:73:9B:77:53:EA:05:7D:E5:58:9A:BB
+a=setup:actpass
